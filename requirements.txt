@@ -1,0 +1,31 @@
+# =====================================================================
+# M3 requirements — healthcare-fraud neural network milestone
+# Curated, pinned, DIRECT-DEPS-ONLY (what the Colab notebook installs).
+# Sources: M2 verified pins (numpy/pandas/sklearn/pyarrow) + week7/week8
+# labs (torch, mlflow, tensorboard, google-cloud-storage, xgboost).
+# NOTE: google.colab (auth) is PREINSTALLED in Colab — not listed here.
+# =====================================================================
+
+# --- Analysis / data stack (pins reused from M2's verified requirements) ---
+numpy==2.5.3
+pandas==3.0.6
+scikit-learn==1.9.1
+pyarrow==25.0.1
+
+# --- Plotting / EDA util ---
+matplotlib==3.11.2
+seaborn==0.13.2
+klib==1.4.1
+
+# --- GCS data access (gold features live in gs://milestone_two) ---
+google-cloud-storage==3.17.1
+
+# --- Gradient-boosted baseline (fair NN-vs-baseline comparison) ---
+xgboost==3.4.1
+
+# --- Neural network (week7) ---
+torch==2.15.0
+
+# --- Experiment tracking / MLOps (week8) ---
+mlflow==3.18.0
+tensorboard==2.21.0
